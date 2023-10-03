@@ -54,3 +54,35 @@ const getLongestWordWithVowels = (sentence) => {
 
   return result;
 };
+
+// Testing
+const testString1 =
+  "Smart people learn from everything and everyone, average people from their experience, stupid people already, have all the answers";
+
+// with special characters
+const testString2 =
+  "Smart people lear#$n from ever%^ything and everyone, average people from their exp*(erience, stupid people already, have all the answers";
+
+// with numbers
+const testString3 =
+  "Smart people learn from every12thing and every45one, average people from their ex56perience, stupid people already, have all the answers";
+
+// with uppercase
+const testString4 =
+  "Smart people learn from everythiGYUng and everyone, average people from their experHGFience, stupid people already, have all the answers";
+
+// miscellaneous
+const testString5 =
+  "Smart peDFTople learn from every^%Tthing and every65^Gne, average people from their expe*U&HGrience, stupid people already, have all the answers";
+
+const result1 = getLongestWordWithVowels(testString1);
+const result2 = getLongestWordWithVowels(testString2);
+const result3 = getLongestWordWithVowels(testString3);
+const result4 = getLongestWordWithVowels(testString4);
+const result5 = getLongestWordWithVowels(testString5);
+
+console.log({ result1, result2, result3, result4, result5 });
+
+// run script
+// node index.js
+// in root dir
